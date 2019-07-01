@@ -6,3 +6,4 @@ colormap([0 0 0]);
 axis off;
 %view(-25, 30);
 view(-25, 0);
+shading interp;
