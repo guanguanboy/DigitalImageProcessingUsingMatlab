@@ -3,10 +3,10 @@ A = imread('Fig0908(a).tif');
 imshow(A);
 se = strel('disk', 10);
 se.Neighborhood %View the structuring element.这条命令用来观察结构元
-figure,imshow(se.Neighborhood); %显示结构元
+%figure,imshow(se.Neighborhood); %显示结构元
 E10 = imerode(A, se);
 figure, imshow(E10);
-
+title('E10');
 %选择太小的结构元
 se = strel('disk', 5);
 E5 = imerode(A, se);
