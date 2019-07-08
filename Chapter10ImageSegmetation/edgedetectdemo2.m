@@ -17,6 +17,7 @@ title('gCanny_default');
 gSobel_best = edge(f, 'sobel', 0.05);
 gLoG_best = edge(f, 'log', 0.003, 2.25);
 gCanny_best = edge(f, 'canny', [0.04, 0.10], 1.5);
+imwrite(gCanny_best, 'gCanny_best.tif');
 
 figure, imshow(gSobel_best);
 title('gSobel_best');
