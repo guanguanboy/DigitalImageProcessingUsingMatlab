@@ -10,5 +10,5 @@ f = [119 123 168 119;
  p = p/sum(p);
  disp(p);
  
- h = ntrop(f);
+ h = ntrop(f); % hi= -pi * log(pi); 如果log的底数取为2，则熵的单位是bit每像素，即bit/pixel
  disp(h);
