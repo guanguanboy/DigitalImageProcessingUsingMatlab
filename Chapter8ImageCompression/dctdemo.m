@@ -1,6 +1,10 @@
 %演示离散余弦变换用于图像压缩
 %https://ww2.mathworks.cn/help/images/discrete-cosine-transform.html
 
+%关于dct
+%https://www.zhihu.com/question/23792822/answer/34658276  解释DCT为什么不能做频谱分析
+%https://www.zhihu.com/question/26244854/answer/34659868
+%解释为什么DCT比FFt变换具有更好的能量聚集度
 %Read an image into the workspace and convert it to class double.
 I = imread('cameraman.tif');
 I = im2double(I);
